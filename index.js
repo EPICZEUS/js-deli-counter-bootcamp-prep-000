@@ -15,9 +15,9 @@ function currentLine(line) {
   if (line.length === 0) {
     out += " empty.";
   } else {
-    out += ": ";
+    out += ":";
     for (let i = 0; i < line.length; i++) {
-      out += `${i + 1}. ${line[i]}`;
+      out += ` ${i + 1}. ${line[i]}`;
     }
   }
   return out;
