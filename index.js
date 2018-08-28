@@ -14,6 +14,11 @@ function currentLine(line) {
   let out = "The line is currently";
   if (line.length === 0) {
     out += " empty.";
+  } else {
+    line += ": ";
+    for (let i = 0; i < line.length; i++) {
+      out += `${i + 1}. ${line[i]}`;
+    }
   }
   
 }
