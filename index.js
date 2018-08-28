@@ -17,8 +17,9 @@ function currentLine(line) {
   } else {
     out += ":";
     for (let i = 0; i < line.length; i++) {
-      out += ` ${i + 1}. ${line[i]}`;
+      out += ` ${i + 1}. ${line[i]},`;
     }
+    out = out.slice(0, out.length - 1);
   }
   return out;
 }
